@@ -1,16 +1,24 @@
-## Hi there 👋
+# Data Domain Health Monitor
 
-<!--
-**archmuthu/archmuthu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+A PowerShell-based health monitoring solution for Dell EMC Data Domain systems.
+Sends automated alerts via Microsoft Teams and Email using Power Automate.
 
-Here are some ideas to get you started:
+## Features
+- Monitors capacity, utilization, hardware health, disk status
+- Filters known/excluded alert Event IDs
+- Supports multiple hosts with different credentials
+- Integrates with Power Automate (no HTTP trigger required)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Requirements
+- PowerShell 5.1+
+- SSH access to Data Domain hosts
+- Power Automate flow (email-triggered)
+
+## Usage
+1. Clone the repository
+2. Update `$hosts` list with your Data Domain hostnames
+3. Schedule via Windows Task Scheduler
+
+## Author
+Muthukumaran Kalyanam — Storage & Backup Infrastructure Engineer
+NextEra Energy / FPL
